@@ -397,10 +397,10 @@ function renderRestaurants() {
             ) +
 
             (
-                restaurant.address_text
+                restaurant.address
                     ? "<p>🏠 " +
                       escapeHTML(
-                          restaurant.address_text
+                          restaurant.address
                       ) +
                       "</p>"
                     : ""
@@ -582,7 +582,7 @@ function editRestaurant(id) {
     document.getElementById(
         "restaurantAddressAdmin"
     ).value =
-        restaurant.address_text || "";
+        restaurant.address || "";
 
     document.getElementById(
         "restaurantImageAdmin"
@@ -746,7 +746,7 @@ if (restaurantForm) {
                 area:
                     area || null,
 
-                address_text:
+                address:
                     address || null,
 
                 phone:
